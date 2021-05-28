@@ -12,10 +12,14 @@
             <button  name="validate" id="validate">Validate</button>
         </form>
         <script>
-            var name = prompt("what is your name");
-            var surname = prompt("what is your surname");
-            var city = prompt ("In which city do you live");
-        alert ("Name : " + name + "\n" + "Surname : " + surname + "\n" + "City : " + city);
+           var onclick = document.getElementById("validate") 
+           
+           onclick.addEventListener("click", function(){
+           var name_1 = document.getElementById("name").value;
+           var surname_1 = document.getElementById("surname").value;
+           var city_1 = document.getElementById("city").value;
+            alert("Name : " + name_1 + "\n" + "Surname : " + surname_1 + "\n" + "City : " + city_1); 
+            });      
         </script>
     </body>
 </html>
